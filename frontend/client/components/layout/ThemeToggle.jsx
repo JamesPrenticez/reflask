@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import useDarkSide from "../hooks/useDarkSide"
-import { SunIcon, MoonIcon } from "../icons/theme"
+import useDarkSide from "../../hooks/useDarkSide"
+import { SunIcon, MoonIcon } from "../../icons/theme"
 
 const ThemeToggle = () => {
   const [colorTheme, setTheme] = useDarkSide()

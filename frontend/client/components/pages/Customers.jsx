@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
-function Customers() {
+export default function Customers() {
   return (
     <>
       <h1>Title: {window.title}</h1>
     </>
   )
 }
-
-export default Customers

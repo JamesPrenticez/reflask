@@ -17,7 +17,7 @@
 [data-theme="dark"] {
   --primary: #313436;
   --secondary: #FFFFFF;
-  --tertiary: #00FF00; 
+  --tertiary: #38bdf8; 
 }
 
 @layer base {
