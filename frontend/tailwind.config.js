@@ -5,6 +5,7 @@ module.exports = {
     './client/components/**/*.{js,ts,jsx,tsx}'
   ],
   media: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     fontSize: {
       xs: ['.75rem', '1rem'], //font size, line height
@@ -20,6 +21,15 @@ module.exports = {
       "6xl": ['6rem', '8.5rem'],
       "7xl": ['7rem', '9.5rem'],
     },
+    extend:{
+      colors:{
+        theme: {
+          primary: "var(--primary)",
+          secondary: "var(--secondary)",
+          tertiary: "var(--tertiary)"
+        }
+      }
+    }
   },
   variants: {},
   plugins: [],

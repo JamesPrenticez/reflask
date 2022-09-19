@@ -15,7 +15,7 @@ from .config import config
 # login.login_view = 'index.index'
 
 def create_app(config_env):
-	app = Flask(__name__, static_folder="../frontend/public/", template_folder="../frontend/public/")
+	app = Flask(__name__, static_folder="./public", template_folder="./public")
 	#app = Flask(__name__)
 	app.config.from_object(config[config_env])
 

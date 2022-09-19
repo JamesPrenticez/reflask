@@ -1,3 +1,4 @@
+/frontend
 .git*
 .vscode
 local.settings.json

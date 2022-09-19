@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities; 
 
+/*primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary*/
+:root {
+  --primary: #FFFFFF; 
+  --secondary: #313436;; 
+  --tertiary: #D1D6DB; 
+  --blue1: #38bdf8;
+  --blue2: #007fff;
+  --blue3: #001e3c;
+  --blue4: #0a1929;
+	--blue5: #002470;
+}
+
+[data-theme="dark"] {
+  --primary: #313436;
+  --secondary: #FFFFFF;
+  --tertiary: #00FF00; 
+}
+
 @layer base {
   body {
     @apply

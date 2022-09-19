@@ -1,10 +1,17 @@
 const path = require('path')
+// console.log("===========================================================================")
+// Origionaly this
+// output: path.join(__dirname, './public')
+// devmiddleware/publicpath: path.join(__dirname, './public/bundle.js')
+// Changed to this
+// console.log(path.join(__dirname, '../backend/public'))
+// console.log("===========================================================================")
 
 module.exports = {
   mode: 'development',
   entry: ['./client/index.js'],  
   output: {
-    path: path.join(__dirname, './public'),
+    path: path.join(__dirname, '../backend/public'),
     publicPath: '/',
     filename: 'bundle.js',
   },
@@ -17,7 +24,7 @@ module.exports = {
     devMiddleware: {
       index: true,
       mimeTypes: { phtml: 'text/html' },
-      publicPath: path.join(__dirname, './public/bundle.js'),
+      publicPath: path.join(__dirname, '../backend/public/bundle.js'),
       serverSideRender: true,
       writeToDisk: (filePath) => {
         return !/hot-update/i.test(filePath);

@@ -1,8 +1,15 @@
-# Reack / Flask Boilerplate
+# React / Flask / Azure Functions Boilerplate
 
 ### Set up azure function
 https://github.com/Azure-Samples/flask-app-on-azure-functions/
 https://docs.microsoft.com/en-us/samples/azure-samples/flask-app-on-azure-functions/azure-functions-python-create-flask-app/
+
+
+## Virtual Envirment
+I have not figured out how to activate this from npm
+```
+. venv/Scripts/activate
+```
 
 ### Set up React for use with Flask
 0. npm install -g create-react-app react-scripts
@@ -37,6 +44,10 @@ https://stackoverflow.com/questions/44209978/serving-a-front-end-created-with-cr
 3. . venv/Scripts/activate
 4. pip install -r requirements.txt
 5. func start
+
+
+### ENV
+- Set debug to true when in dev and false when in prod (this captures change in hot reload and also swaps the mail server)
 
 
 ## Run
