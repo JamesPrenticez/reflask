@@ -28,12 +28,14 @@ def create_app(config_env):
 	##############################################################
 	with app.app_context():
 		from .home.routes import blueprint as home_blueprint
+		from .errors.routes import blueprint as errors_blueprint
 		from .customers.routes import blueprint as customers_blueprint
 
+		app.register_blueprint(errors_blueprint)
 		app.register_blueprint(home_blueprint)
 		app.register_blueprint(customers_blueprint)
 
-	return app
+		return app
 
 # Create App - this could be split into a separate file but there is no point
 app = create_app(os.getenv('FLASK_ENV'))
